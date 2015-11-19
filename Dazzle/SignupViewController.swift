@@ -192,8 +192,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     userPF["fullName"] = fullNameTextField.text
     userPF["firstName"] = name[0] as String
     userPF["lastName"] = name[1] as String
-    userPF["school"] = "Generic High School"
-    userPF["year"] = "Year Placeholder"
     
     userPF.signUpInBackgroundWithBlock {(succeeded, error) -> Void in
       if error == nil {
