@@ -65,44 +65,60 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     self.passwordTextField.delegate = self
     
     fullNameContainer.backgroundColor = UIColor.clearColor()
+    fullNameContainer.layer.borderColor = backgroundColor
+    fullNameContainer.layer.borderWidth = 2
+    fullNameContainer.layer.cornerRadius = 30
+    
     fullNameLabel.text = "Full Name"
-    fullNameLabel.textColor = UIColor.whiteColor()
+    fullNameLabel.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     fullNameLabel.font = UIFont(name: defaultFont, size: 18)
     fullNameTextField.text = ""
-    fullNameTextField.textColor = UIColor.whiteColor()
+    fullNameTextField.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     fullNameTextField.font = UIFont(name: defaultFont, size: 18)
     
     userContainer.backgroundColor = UIColor.clearColor()
+    userContainer.layer.borderColor = backgroundColor
+    userContainer.layer.borderWidth = 2
+    userContainer.layer.cornerRadius = 30
+    
     userLabel.text = "Email"
-    userLabel.textColor = UIColor.whiteColor()
+    userLabel.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     userLabel.font = UIFont(name: defaultFont, size: 18)
     userTextField.text = ""
-    userTextField.textColor = UIColor.whiteColor()
+    userTextField.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     userTextField.font = UIFont(name: defaultFont, size: 18)
     
     passwordContainer.backgroundColor = UIColor.clearColor()
+    passwordContainer.layer.borderColor = backgroundColor
+    passwordContainer.layer.borderWidth = 2
+    passwordContainer.layer.cornerRadius = 30
+    
     passwordLabel.text = "Password"
-    passwordLabel.textColor = UIColor.whiteColor()
+    passwordLabel.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     passwordLabel.font = UIFont(name: defaultFont, size: 18)
     passwordTextField.text = ""
-    passwordTextField.textColor = UIColor.whiteColor()
+    passwordTextField.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     passwordTextField.font = UIFont(name: defaultFont, size: 18)
     passwordTextField.secureTextEntry = true
     
     passwordConfirmContainer.backgroundColor = UIColor.clearColor()
+    passwordConfirmContainer.layer.borderColor = backgroundColor
+    passwordConfirmContainer.layer.borderWidth = 2
+    passwordConfirmContainer.layer.cornerRadius = 30
+    
     passwordConfirmLabel.text = "Confirm Password"
-    passwordConfirmLabel.textColor = UIColor.whiteColor()
+    passwordConfirmLabel.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     passwordConfirmLabel.font = UIFont(name: defaultFont, size: 18)
     passwordConfirmTextField.text = ""
-    passwordConfirmTextField.textColor = UIColor.whiteColor()
+    passwordConfirmTextField.textColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0)
     passwordConfirmTextField.font = UIFont(name: defaultFont, size: 18)
     passwordConfirmTextField.secureTextEntry = true
     
     signUpButton.setTitle("Sign Up", forState: .Normal)
-    signUpButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+    signUpButton.setTitleColor(UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0), forState: .Normal)
     signUpButton.titleLabel?.font = UIFont(name: defaultFont, size: 22)
     signUpButton.layer.borderWidth = 3
-    signUpButton.layer.borderColor = UIColor.whiteColor().CGColor
+    signUpButton.layer.borderColor = backgroundColor
     signUpButton.layer.cornerRadius = 5
     signUpButton.addTarget(self, action: "registerNormal", forControlEvents: .TouchUpInside)
   }

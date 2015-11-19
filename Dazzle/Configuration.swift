@@ -35,12 +35,12 @@ var defaultFont: String = "Avenir-Light"
 //var navbarTextColor: UIColor = UIColor.whiteColor()
 //var textColor: UIColor = UIColor.blackColor()
 
-var backgroundColor: UIColor = UIColor.whiteColor()
+var backgroundColor = UIColor(red: (237.0/255.5), green: (95.0/255.0), blue: (57.0/255.0), alpha: 1.0).CGColor
 var tabbarColor: UIColor = UIColor(red: 0.0, green: (122.0/255.0), blue: 1.0, alpha: 1.0)
 var tabbarTextColor: UIColor = UIColor.whiteColor()
 var navbarColor: UIColor = UIColor(red: 0.0, green: (122.0/255.0), blue: 1.0, alpha: 1.0)
 var navbarTextColor: UIColor = UIColor.whiteColor()
-var textColor: UIColor = UIColor.blackColor()
+var textColor: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
 
 // Version Settings
 let iosVersion = NSString(string: Device.systemVersion).doubleValue

@@ -28,7 +28,7 @@ class IndexViewController: UIViewController {
 
   @IBOutlet weak var signUpButton: UIButton!
   @IBOutlet weak var signInButton: UIButton!
-  
+  @IBOutlet weak var termsText: UILabel!
   
   // *************************************
   // MARK: - View Controller Configuration
@@ -37,13 +37,16 @@ class IndexViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    signInButton.layer.borderWidth = 3
-    signInButton.layer.borderColor = UIColor.redColor().CGColor
+    signInButton.layer.borderWidth = 2
+    signInButton.layer.borderColor = backgroundColor
     signInButton.layer.cornerRadius = 30
     
-    signUpButton.layer.borderWidth = 3
-    signUpButton.layer.borderColor = UIColor.redColor().CGColor
+    signUpButton.layer.borderWidth = 2
+    signUpButton.layer.borderColor = backgroundColor
     signUpButton.layer.cornerRadius = 30
+    
+    termsText.lineBreakMode = .ByWordWrapping
+    termsText.numberOfLines = 0
   }
   
   override func preferredStatusBarStyle() -> UIStatusBarStyle {

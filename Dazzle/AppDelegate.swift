@@ -31,16 +31,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+    UINavigationBar.appearance().barTintColor = navbarColor
+    UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: navbarTextColor]
+    UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont(name: "Avenir-Light", size: 22)!]
+    
+    UITabBar.appearance().barTintColor = tabbarColor
+    UITabBar.appearance().tintColor = tabbarTextColor
+    
     Parse.setApplicationId(parseAppId, clientKey: parseAppSecret)
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     PFUser.enableRevocableSessionInBackground()
     
-//    PFUser.logOutInBackground()
-//    
-//    if PFUser.currentUser() == nil || !PFUser.currentUser()!.isAuthenticated() {
-//      let redirectLogin = mainBoard.instantiateViewControllerWithIdentifier("IndexVC") as! IndexViewController
-//      window!.rootViewController = redirectLogin
-//    }
+    PFUser.logOutInBackground()
+    
+    if PFUser.currentUser() == nil || !PFUser.currentUser()!.isAuthenticated() {
+      let redirectLogin = mainBoard.instantiateViewControllerWithIdentifier("IndexVC") as! IndexViewController
+      window!.rootViewController = redirectLogin
+    }
     
     return true
   }

@@ -98,8 +98,8 @@ class LoginViewController: UIViewController , UITextFieldDelegate{
   
   func loginNormal() {
     MBProgressHUD.showHUDAddedTo(self.view, animated: true)
-    var newUsername = userTextField.text
-    var newPassword = passwordTextField.text
+    let newUsername = userTextField.text
+    let newPassword = passwordTextField.text
     
     PFUser.logInWithUsernameInBackground(newUsername!, password: newPassword!, block: { (newUser: PFUser?, newError: NSError?) -> Void in
       if newUser != nil {
