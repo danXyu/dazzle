@@ -71,7 +71,7 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
       task["title"] = describeFieldLabel.text
       task["keywords"] = keywordsTextField.text
       task["activityType"] = currentSelection
-//      task["creator"] = currentUser
+      task["isGroupActivity"] = groupSelector.on
       
       task.saveInBackgroundWithBlock() { (success, error) -> Void in
         if error == nil {

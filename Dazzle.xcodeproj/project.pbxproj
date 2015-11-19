@@ -12,6 +12,7 @@
 		150C57571BFB1D5900BE4153 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57541BFB1D5900BE4153 /* IndexViewController.swift */; };
 		150C57591BFBBE0C00BE4153 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57581BFBBE0C00BE4153 /* GroupViewController.swift */; };
 		15889F6B1BFE754B00F93647 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */; };
+		15889F6D1BFE88F000F93647 /* TaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15889F6C1BFE88F000F93647 /* TaskViewCell.swift */; };
 		15C8671A1BFB113F00B97523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C867191BFB113F00B97523 /* AppDelegate.swift */; };
 		15C8671C1BFB113F00B97523 /* SoloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C8671B1BFB113F00B97523 /* SoloViewController.swift */; };
 		15C8671F1BFB113F00B97523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C8671D1BFB113F00B97523 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		150C57541BFB1D5900BE4153 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		150C57581BFBBE0C00BE4153 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		15889F6C1BFE88F000F93647 /* TaskViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewCell.swift; sourceTree = "<group>"; };
 		15C867161BFB113F00B97523 /* Dazzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dazzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C867191BFB113F00B97523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C8671B1BFB113F00B97523 /* SoloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				15C8671B1BFB113F00B97523 /* SoloViewController.swift */,
 				150C57581BFBBE0C00BE4153 /* GroupViewController.swift */,
 				15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */,
+				15889F6C1BFE88F000F93647 /* TaskViewCell.swift */,
 			);
 			name = "Main Menu";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				15C8671A1BFB113F00B97523 /* AppDelegate.swift in Sources */,
 				15889F6B1BFE754B00F93647 /* NewTaskViewController.swift in Sources */,
 				150C57571BFB1D5900BE4153 /* IndexViewController.swift in Sources */,
+				15889F6D1BFE88F000F93647 /* TaskViewCell.swift in Sources */,
 				150C57591BFBBE0C00BE4153 /* GroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

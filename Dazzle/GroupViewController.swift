@@ -45,7 +45,7 @@ class GroupViewController: UITableViewController {
   
   func loadGroups(){
     let query = PFQuery(className: "Tasks")
-    query.whereKey("isGroupActivity", equalTo: false)
+    query.whereKey("isGroupActivity", equalTo: true)
     
     query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
       self.data = results! as [PFObject]
@@ -75,17 +75,17 @@ class GroupViewController: UITableViewController {
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//    if self.data != nil {
-//      if self.data.count == 0 {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("NoGroupsCell", forIndexPath: indexPath) as! UITableViewCell
-//        return cell
-//      } else {
-//        let group = self.data[indexPath.row]
-//      }
-//    } else {
-//
-//    }
-    let cell = tableView.dequeueReusableCellWithIdentifier("TaskCell", forIndexPath: indexPath) as! UITableViewCell
+    if self.data != nil {
+      if self.data.count == 0 {
+        let cell = tableView.dequeueReusableCellWithIdentifier("NoTasksCell", forIndexPath: indexPath)
+        return cell
+      } else {
+        let task = self.data[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier("TaskViewCell", forIndexPath: indexPath) as! TaskViewCell
+        cell.taskTitle.text = String(task.objectForKey("title"))
+      }
+    }
+    let cell = tableView.dequeueReusableCellWithIdentifier("NoTasksCell", forIndexPath: indexPath)
     return cell
   }
   

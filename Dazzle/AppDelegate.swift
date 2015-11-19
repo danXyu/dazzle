@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     PFUser.enableRevocableSessionInBackground()
     
-    PFUser.logOutInBackground()
+//    PFUser.logOutInBackground()
     
     if PFUser.currentUser() == nil || !PFUser.currentUser()!.isAuthenticated() {
       let redirectLogin = mainBoard.instantiateViewControllerWithIdentifier("IndexVC") as! IndexViewController
