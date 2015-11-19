@@ -35,12 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     PFUser.enableRevocableSessionInBackground()
     
-    PFUser.logOutInBackground()
-    
-    if PFUser.currentUser() == nil || !PFUser.currentUser()!.isAuthenticated() {
-      let redirectLogin = mainBoard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginViewController
-      window!.rootViewController = redirectLogin
-    }
+//    PFUser.logOutInBackground()
+//    
+//    if PFUser.currentUser() == nil || !PFUser.currentUser()!.isAuthenticated() {
+//      let redirectLogin = mainBoard.instantiateViewControllerWithIdentifier("IndexVC") as! IndexViewController
+//      window!.rootViewController = redirectLogin
+//    }
     
     return true
   }
