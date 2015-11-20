@@ -37,8 +37,11 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
   @IBOutlet var describeLabel: UILabel!
   @IBOutlet var describeFieldLabel: UITextView!
   
+    @IBOutlet weak var sessionDuration: UIPickerView!
   var activityPickerData: [String] = [String]()
+    var sessionPickerData: [String] = [String]()
   var currentSelection: String = ""
+    var currSession: String = ""
   
   // ************************************
   // MARK: - Necessary View Configuration
@@ -48,6 +51,9 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
     super.viewDidLoad()
     tableView.separatorColor = UIColor(white: 0.75, alpha: 1.0)
     activityPickerData = ["Draw", "Speak", "Type"]
+    sessionPickerData = ["5min", "10min", "15min"]
+    self.sessionDuration.delegate = self
+    self.sessionDuration.dataSource = self
   }
   
   
@@ -70,6 +76,7 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
       let task = PFObject(className: "Tasks")
       task["title"] = describeFieldLabel.text
       task["keywords"] = keywordsTextField.text
+        task["sessionDuration"] = currSession
       task["activityType"] = currentSelection
       task["isGroupActivity"] = groupSelector.on
       
@@ -100,17 +107,16 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 4
+    return 7
   }
   
   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-    if indexPath.row == 3 {
-      return 190
-    } else if indexPath.row == 1 {
-      return 200
-    }else {
-      return 50
+    if indexPath.row == 6 {
+      return 100
+    } else if indexPath.row == 2{
+        return 150
     }
+    return 50
   }
   
   override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -139,14 +145,23 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
   }
   
   func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    if(pickerView.tag == 1){
+        return sessionPickerData.count;
+    }
     return activityPickerData.count
   }
   
   func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    if(pickerView.tag == 1){
+        return sessionPickerData[row];
+    }
     return activityPickerData[row]
   }
   
   func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    if(pickerView.tag == 1){
+        currSession = sessionPickerData[row]
+    }
     currentSelection = activityPickerData[row]
   }
   

@@ -37,6 +37,10 @@ class GroupViewController: UITableViewController {
     super.viewDidLoad()
     loadGroups()
   }
+    
+    override func viewDidAppear(animated: Bool) {
+        loadGroups()
+    }
   
   
   // **************************
@@ -49,6 +53,7 @@ class GroupViewController: UITableViewController {
     
     query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
       self.data = results! as [PFObject]
+        print(self.data.count);
       self.tableView.reloadData()
     }
   }
@@ -67,6 +72,7 @@ class GroupViewController: UITableViewController {
   }
   
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
     if (self.data != nil) {
       return self.data.count
     } else {
@@ -83,6 +89,7 @@ class GroupViewController: UITableViewController {
         let task = self.data[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier("TaskViewCell", forIndexPath: indexPath) as! TaskViewCell
         cell.taskTitle.text = String(task.objectForKey("title"))
+        return cell
       }
     }
     let cell = tableView.dequeueReusableCellWithIdentifier("NoTasksCell", forIndexPath: indexPath)
