@@ -1,2 +1,0 @@
-# dazzle
-Creativity app
