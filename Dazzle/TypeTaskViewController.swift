@@ -17,6 +17,7 @@ class TypeTaskViewController: UIViewController, UITableViewDataSource, UITableVi
   @IBOutlet weak var answerTextField: UITextField!
   
   override func viewDidLoad() {
+    super.viewDidLoad()
     self.tableView.delegate = self
     self.tableView.dataSource = self
     

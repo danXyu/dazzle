@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D37090656D753164D6F9A2B8'
-               BlueprintName = 'PHFDelegateChain'
+               BlueprintIdentifier = 'F514BC58F445352CCEBCC339'
+               BlueprintName = 'ACEDrawingView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'PHFDelegateChain.framework'>
+               BuildableName = 'ACEDrawingView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

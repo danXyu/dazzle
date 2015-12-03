@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '53A88154BBD014F67C9EF00E'
+               BlueprintIdentifier = '8BFDC70FD0DDC6EF9AB32431'
                BlueprintName = 'PHFComposeBarView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PHFComposeBarView.framework'>

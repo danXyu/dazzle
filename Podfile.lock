@@ -1,4 +1,5 @@
 PODS:
+  - ACEDrawingView (1.3.7)
   - Bolts (1.5.0):
     - Bolts/AppLinks (= 1.5.0)
     - Bolts/Tasks (= 1.5.0)
@@ -35,6 +36,7 @@ PODS:
   - SlackTextViewController (1.7.2)
 
 DEPENDENCIES:
+  - ACEDrawingView
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -46,6 +48,7 @@ DEPENDENCIES:
   - SlackTextViewController
 
 SPEC CHECKSUMS:
+  ACEDrawingView: 325b5cd00125766c6df9b30aa3a7b68866d2ce16
   Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
   FBSDKCoreKit: 66a935d17b6e00b6b64e604f2eb9b72c9ab7deb8
   FBSDKLoginKit: d893fcbb98d854496925e9ff73c67b896982d3c4

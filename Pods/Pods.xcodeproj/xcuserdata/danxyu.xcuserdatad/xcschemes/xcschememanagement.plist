@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ACEDrawingView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,6 +82,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>42024CDFA971CA78B3929BBFF4380E04</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>57ADC05E440A960212657DE6DA1FEDD5</key>
 		<dict>
 			<key>primary</key>
@@ -87,17 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60FC023EEC190E8D7BAAB44E70FEE2FF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>62D1D150C79BA9A724B81F9C304C64DD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9E0BBEC5C118C167DE835589A4CA1855</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA9B96DB5AC54C05C9AE50024F492EC7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -128,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>ECDCBA65D37B658DBDF461721DB4B84A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F23EF643357DE4902A2E6096F77BF758</key>
 		<dict>
 			<key>primary</key>
 			<true/>

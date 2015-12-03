@@ -1456,10 +1456,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-VK-m5p">
-                                <rect key="frame" x="235" y="555" width="130" height="30"/>
-                                <state key="normal" title="Get Started Button"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="DrawInstructions" translatesAutoresizingMaskIntoConstraints="NO" id="nQ0-5l-nnO">
                                 <rect key="frame" x="20" y="91" width="560" height="448"/>
                                 <constraints>
@@ -1473,6 +1469,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-VK-m5p">
+                                <rect key="frame" x="235" y="555" width="130" height="30"/>
+                                <state key="normal" title="Get Started Button"/>
+                                <connections>
+                                    <segue destination="pCx-Rz-T7h" kind="show" id="gaz-AL-fRQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1489,6 +1492,125 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdU-O4-ibT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5311" y="-2197"/>
+        </scene>
+        <!--Draw View Controller-->
+        <scene sceneID="L9F-sY-enq">
+            <objects>
+                <viewController id="pCx-Rz-T7h" customClass="DrawViewController" customModule="Dazzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AaZ-yX-8so"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mh3-VA-VMm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wta-up-FV2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOO-eG-m4k">
+                                <rect key="frame" x="20" y="80" width="135" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2K-7D-M7m">
+                                <rect key="frame" x="545" y="77" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="clickedFinished:" destination="pCx-Rz-T7h" eventType="touchUpInside" id="7zM-ls-Pv1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoZ-NA-vGR" customClass="ACEDrawingView">
+                                <rect key="frame" x="0.0" y="128" width="600" height="472"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jOO-eG-m4k" firstAttribute="top" secondItem="AaZ-yX-8so" secondAttribute="bottom" constant="16" id="8oz-rf-OdO"/>
+                            <constraint firstItem="b2K-7D-M7m" firstAttribute="centerY" secondItem="jOO-eG-m4k" secondAttribute="centerY" id="AMI-QX-PNM"/>
+                            <constraint firstItem="Mh3-VA-VMm" firstAttribute="top" secondItem="VoZ-NA-vGR" secondAttribute="bottom" id="V0M-6e-DL8"/>
+                            <constraint firstItem="VoZ-NA-vGR" firstAttribute="leading" secondItem="wta-up-FV2" secondAttribute="leadingMargin" constant="-20" id="WMv-OG-JFI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VoZ-NA-vGR" secondAttribute="trailing" constant="-20" id="hmX-Ym-5Fe"/>
+                            <constraint firstItem="VoZ-NA-vGR" firstAttribute="top" secondItem="jOO-eG-m4k" secondAttribute="bottom" constant="24" id="iuZ-Qn-Auv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jOO-eG-m4k" secondAttribute="leading" id="jbG-1p-G8N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b2K-7D-M7m" secondAttribute="trailing" constant="-2" id="ytg-dA-1O0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QuestionLabel" destination="jOO-eG-m4k" id="DpK-2H-3b0"/>
+                        <outlet property="drawingPAd" destination="VoZ-NA-vGR" id="RbD-i1-tOD"/>
+                        <segue destination="2cr-om-iQf" kind="show" identifier="finishedDrawing" id="vk8-CU-wkq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKy-0N-4zH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6022" y="-2197"/>
+        </scene>
+        <!--Draw Results View Controller-->
+        <scene sceneID="Pxx-wD-7lo">
+            <objects>
+                <viewController id="2cr-om-iQf" customClass="DrawResultsViewController" customModule="Dazzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ie-x3-ESc"/>
+                        <viewControllerLayoutGuide type="bottom" id="O0M-9f-0An"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SOE-Ha-d0u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creativity Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWX-pi-dQT">
+                                <rect key="frame" x="20" y="83" width="126.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The actual score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWr-QD-5an">
+                                <rect key="frame" x="170.5" y="83" width="127.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwR-hT-xec">
+                                <rect key="frame" x="485" y="79" width="95" height="30"/>
+                                <state key="normal" title="Another Task!"/>
+                                <connections>
+                                    <segue destination="Ph3-J6-fDd" kind="show" id="fcG-OE-Xbb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="42q-hY-snA">
+                                <rect key="frame" x="0.0" y="120" width="600" height="479.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="42q-hY-snA" firstAttribute="leading" secondItem="SOE-Ha-d0u" secondAttribute="leadingMargin" constant="-20" id="8Qh-uO-Kdd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="42q-hY-snA" secondAttribute="trailing" constant="-20" id="C91-5E-ECJ"/>
+                            <constraint firstItem="O0M-9f-0An" firstAttribute="top" secondItem="42q-hY-snA" secondAttribute="bottom" id="DbA-Xu-GpI"/>
+                            <constraint firstItem="lwR-hT-xec" firstAttribute="top" secondItem="8Ie-x3-ESc" secondAttribute="bottom" constant="15" id="KHU-bC-vS7"/>
+                            <constraint firstItem="lwR-hT-xec" firstAttribute="leading" secondItem="HWr-QD-5an" secondAttribute="trailing" constant="326" id="Kb0-4z-Z93"/>
+                            <constraint firstItem="lwR-hT-xec" firstAttribute="leading" secondItem="SOE-Ha-d0u" secondAttribute="leadingMargin" constant="514" id="NX6-ND-YMS"/>
+                            <constraint firstItem="42q-hY-snA" firstAttribute="top" secondItem="CWX-pi-dQT" secondAttribute="bottom" constant="17" id="Nbg-A4-fMr"/>
+                            <constraint firstItem="HWr-QD-5an" firstAttribute="top" secondItem="8Ie-x3-ESc" secondAttribute="bottom" constant="19" id="SVI-ie-O9G"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CWX-pi-dQT" secondAttribute="leading" id="Y7b-tL-aAg"/>
+                            <constraint firstItem="CWX-pi-dQT" firstAttribute="top" secondItem="8Ie-x3-ESc" secondAttribute="bottom" constant="19" id="dwl-Vr-iVO"/>
+                            <constraint firstItem="HWr-QD-5an" firstAttribute="leading" secondItem="CWX-pi-dQT" secondAttribute="trailing" constant="24" id="lZf-aN-RQQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lwR-hT-xec" secondAttribute="trailing" id="ufz-pF-QuB"/>
+                            <constraint firstItem="HWr-QD-5an" firstAttribute="centerY" secondItem="CWX-pi-dQT" secondAttribute="centerY" id="zWc-38-auk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kb0-4z-Z93"/>
+                                <exclude reference="NX6-ND-YMS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="drawnImage" destination="42q-hY-snA" id="sMa-uA-Dp3"/>
+                        <outlet property="randomScore" destination="HWr-QD-5an" id="HDa-GH-P0G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ5-py-A0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6751" y="-2197"/>
         </scene>
         <!--Type Task Instructions-->
         <scene sceneID="aRc-zd-lcv">
@@ -1665,10 +1787,11 @@
         <image name="TypeInstructions" width="670" height="1047"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3eF-hw-cdF"/>
-        <segue reference="dCA-z7-or7"/>
-        <segue reference="bqV-Ul-1A0"/>
-        <segue reference="Zec-Gs-Ogh"/>
+        <segue reference="vJ4-0z-0gS"/>
+        <segue reference="53x-Xh-5QA"/>
+        <segue reference="fcG-OE-Xbb"/>
         <segue reference="y8i-rT-raT"/>
+        <segue reference="Zec-Gs-Ogh"/>
+        <segue reference="3eF-hw-cdF"/>
     </inferredMetricsTieBreakers>
 </document>

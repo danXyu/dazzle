@@ -42,6 +42,12 @@
 		158D9D651C104B5500E040E3 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D5E1C104B5500E040E3 /* MessageViewController.m */; };
 		158D9D661C104B5500E040E3 /* TypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D601C104B5500E040E3 /* TypingIndicatorView.m */; };
 		158D9D681C10528C00E040E3 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D671C10528C00E040E3 /* AnswerCell.swift */; };
+		158D9D6A1C10F5D200E040E3 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D691C10F5D200E040E3 /* DrawViewController.swift */; };
+		158D9D6C1C10FA3F00E040E3 /* DrawResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D6B1C10FA3F00E040E3 /* DrawResultsViewController.swift */; };
+		158D9D751C10FAF700E040E3 /* ACEDrawingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D701C10FAF700E040E3 /* ACEDrawingTools.m */; };
+		158D9D761C10FAF700E040E3 /* ACEDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D721C10FAF700E040E3 /* ACEDrawingView.m */; };
+		158D9D771C10FAF700E040E3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 158D9D731C10FAF700E040E3 /* LICENSE.txt */; };
+		158D9D781C10FAF700E040E3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D741C10FAF700E040E3 /* README.md */; };
 		15C8671A1BFB113F00B97523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C867191BFB113F00B97523 /* AppDelegate.swift */; };
 		15C8671C1BFB113F00B97523 /* SoloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C8671B1BFB113F00B97523 /* SoloViewController.swift */; };
 		15C8671F1BFB113F00B97523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C8671D1BFB113F00B97523 /* Main.storyboard */; };
@@ -127,6 +133,14 @@
 		158D9D5F1C104B5500E040E3 /* TypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypingIndicatorView.h; sourceTree = "<group>"; };
 		158D9D601C104B5500E040E3 /* TypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypingIndicatorView.m; sourceTree = "<group>"; };
 		158D9D671C10528C00E040E3 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		158D9D691C10F5D200E040E3 /* DrawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		158D9D6B1C10FA3F00E040E3 /* DrawResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawResultsViewController.swift; sourceTree = "<group>"; };
+		158D9D6F1C10FAF700E040E3 /* ACEDrawingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEDrawingTools.h; sourceTree = "<group>"; };
+		158D9D701C10FAF700E040E3 /* ACEDrawingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEDrawingTools.m; sourceTree = "<group>"; };
+		158D9D711C10FAF700E040E3 /* ACEDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACEDrawingView.h; sourceTree = "<group>"; };
+		158D9D721C10FAF700E040E3 /* ACEDrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACEDrawingView.m; sourceTree = "<group>"; };
+		158D9D731C10FAF700E040E3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		158D9D741C10FAF700E040E3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		15C867161BFB113F00B97523 /* Dazzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dazzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C867191BFB113F00B97523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C8671B1BFB113F00B97523 /* SoloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +327,27 @@
 			path = "Messenger-Shared";
 			sourceTree = "<group>";
 		};
+		158D9D6D1C10FAF700E040E3 /* ACEDrawingView */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D6E1C10FAF700E040E3 /* ACEDrawingView */,
+				158D9D731C10FAF700E040E3 /* LICENSE.txt */,
+				158D9D741C10FAF700E040E3 /* README.md */,
+			);
+			path = ACEDrawingView;
+			sourceTree = "<group>";
+		};
+		158D9D6E1C10FAF700E040E3 /* ACEDrawingView */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D6F1C10FAF700E040E3 /* ACEDrawingTools.h */,
+				158D9D701C10FAF700E040E3 /* ACEDrawingTools.m */,
+				158D9D711C10FAF700E040E3 /* ACEDrawingView.h */,
+				158D9D721C10FAF700E040E3 /* ACEDrawingView.m */,
+			);
+			path = ACEDrawingView;
+			sourceTree = "<group>";
+		};
 		15C8670D1BFB113F00B97523 = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +414,7 @@
 			children = (
 				158D9D541C104B5500E040E3 /* Messenger */,
 				158D9D311C10422F00E040E3 /* SlackTextViewController */,
+				158D9D6D1C10FAF700E040E3 /* ACEDrawingView */,
 				158D9D1D1C10292200E040E3 /* Controls */,
 				158D9D131C1028AE00E040E3 /* ANDLineChartView */,
 				158D9D101C10283600E040E3 /* Dazzle-Bridging-Header.h */,
@@ -405,8 +441,10 @@
 				15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */,
 				15889F6C1BFE88F000F93647 /* TaskViewCell.swift */,
 				158D9D0C1C1027AF00E040E3 /* StatsViewController.swift */,
+				158D9D691C10F5D200E040E3 /* DrawViewController.swift */,
 				158D9D2F1C103D5B00E040E3 /* TypeTaskViewController.swift */,
 				158D9D671C10528C00E040E3 /* AnswerCell.swift */,
+				158D9D6B1C10FA3F00E040E3 /* DrawResultsViewController.swift */,
 			);
 			name = "Main Menu";
 			sourceTree = "<group>";
@@ -538,6 +576,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158D9D771C10FAF700E040E3 /* LICENSE.txt in Resources */,
 				15C867241BFB113F00B97523 /* LaunchScreen.storyboard in Resources */,
 				158D9D611C104B5500E040E3 /* Images.xcassets in Resources */,
 				15C867211BFB113F00B97523 /* Assets.xcassets in Resources */,
@@ -620,6 +659,7 @@
 				158D9D4C1C10422F00E040E3 /* SLKTextInputbar.m in Sources */,
 				158D9D2A1C10292200E040E3 /* ADVGradientButton.swift in Sources */,
 				158D9D4E1C10422F00E040E3 /* SLKTextView.m in Sources */,
+				158D9D751C10FAF700E040E3 /* ACEDrawingTools.m in Sources */,
 				15C8674C1BFB182700B97523 /* Configuration.swift in Sources */,
 				158D9D521C10422F00E040E3 /* UIScrollView+SLKAdditions.m in Sources */,
 				158D9D531C10422F00E040E3 /* UIView+SLKAdditions.m in Sources */,
@@ -641,8 +681,11 @@
 				158D9D4F1C10422F00E040E3 /* SLKTextViewController.m in Sources */,
 				158D9D1B1C1028EB00E040E3 /* ANDInternalLineChartView.m in Sources */,
 				150C57571BFB1D5900BE4153 /* IndexViewController.swift in Sources */,
+				158D9D761C10FAF700E040E3 /* ACEDrawingView.m in Sources */,
 				158D9D661C104B5500E040E3 /* TypingIndicatorView.m in Sources */,
+				158D9D6A1C10F5D200E040E3 /* DrawViewController.swift in Sources */,
 				15889F6D1BFE88F000F93647 /* TaskViewCell.swift in Sources */,
+				158D9D6C1C10FA3F00E040E3 /* DrawResultsViewController.swift in Sources */,
 				158D9D1A1C1028EB00E040E3 /* ANDBackgroundChartView.m in Sources */,
 				158D9D631C104B5500E040E3 /* MessageTableViewCell.m in Sources */,
 				158D9D2E1C10292200E040E3 /* ADVTabSegmentControl.swift in Sources */,
@@ -650,6 +693,7 @@
 				158D9D501C10422F00E040E3 /* SLKTypingIndicatorView.m in Sources */,
 				158D9D1C1C1028EB00E040E3 /* ANDLineChartView.m in Sources */,
 				158D9D2D1C10292200E040E3 /* ADVSegmentedControl.swift in Sources */,
+				158D9D781C10FAF700E040E3 /* README.md in Sources */,
 				150C57591BFBBE0C00BE4153 /* GroupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

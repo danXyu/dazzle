@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '2DF94353BE73A6CF5860BEAA'
+               BlueprintIdentifier = '81FAB9CCE289F0321540938F'
                BlueprintName = 'JBInputTableView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JBInputTableView.framework'>

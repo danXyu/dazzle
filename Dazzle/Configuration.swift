@@ -53,6 +53,8 @@ var currentUser = PFUser.currentUser()!
 var hasSignedUp = false
 var selectedTask: PFObject? = nil
 var answers: [String]? = nil
+var savedImage: UIImage? = nil
+
 
 /* Helper Function: scaleImage(image, newSize) */
 func scaleImage(image:UIImage, newSize:CGFloat) -> UIImage {
