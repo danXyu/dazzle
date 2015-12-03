@@ -1,0 +1,6 @@
+framework module JBInputTableView {
+  umbrella header "JBInputTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

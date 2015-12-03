@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150C57551BFB1D5900BE4153 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57521BFB1D5900BE4153 /* LoginViewController.swift */; };
+		150C57561BFB1D5900BE4153 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57531BFB1D5900BE4153 /* SignupViewController.swift */; };
+		150C57571BFB1D5900BE4153 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57541BFB1D5900BE4153 /* IndexViewController.swift */; };
+		150C57591BFBBE0C00BE4153 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150C57581BFBBE0C00BE4153 /* GroupViewController.swift */; };
+		15889F6B1BFE754B00F93647 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */; };
+		15889F6D1BFE88F000F93647 /* TaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15889F6C1BFE88F000F93647 /* TaskViewCell.swift */; };
+		158D9D0D1C1027AF00E040E3 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D0C1C1027AF00E040E3 /* StatsViewController.swift */; };
+		158D9D1A1C1028EB00E040E3 /* ANDBackgroundChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D151C1028EB00E040E3 /* ANDBackgroundChartView.m */; };
+		158D9D1B1C1028EB00E040E3 /* ANDInternalLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D171C1028EB00E040E3 /* ANDInternalLineChartView.m */; };
+		158D9D1C1C1028EB00E040E3 /* ANDLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D191C1028EB00E040E3 /* ANDLineChartView.m */; };
+		158D9D291C10292200E040E3 /* ADVAnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D1F1C10292200E040E3 /* ADVAnimatedButton.swift */; };
+		158D9D2A1C10292200E040E3 /* ADVGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D211C10292200E040E3 /* ADVGradientButton.swift */; };
+		158D9D2B1C10292200E040E3 /* ADVProgressControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D231C10292200E040E3 /* ADVProgressControl.swift */; };
+		158D9D2C1C10292200E040E3 /* ADVProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D241C10292200E040E3 /* ADVProgressLayer.swift */; };
+		158D9D2D1C10292200E040E3 /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D261C10292200E040E3 /* ADVSegmentedControl.swift */; };
+		158D9D2E1C10292200E040E3 /* ADVTabSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D281C10292200E040E3 /* ADVTabSegmentControl.swift */; };
+		158D9D301C103D5B00E040E3 /* TypeTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D2F1C103D5B00E040E3 /* TypeTaskViewController.swift */; };
+		158D9D491C10422F00E040E3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 158D9D321C10422F00E040E3 /* LICENSE */; };
+		158D9D4A1C10422F00E040E3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D331C10422F00E040E3 /* README.md */; };
+		158D9D4B1C10422F00E040E3 /* SLKInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D361C10422F00E040E3 /* SLKInputAccessoryView.m */; };
+		158D9D4C1C10422F00E040E3 /* SLKTextInputbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D381C10422F00E040E3 /* SLKTextInputbar.m */; };
+		158D9D4D1C10422F00E040E3 /* SLKTextView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D3A1C10422F00E040E3 /* SLKTextView+SLKAdditions.m */; };
+		158D9D4E1C10422F00E040E3 /* SLKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D3C1C10422F00E040E3 /* SLKTextView.m */; };
+		158D9D4F1C10422F00E040E3 /* SLKTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D3E1C10422F00E040E3 /* SLKTextViewController.m */; };
+		158D9D501C10422F00E040E3 /* SLKTypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D411C10422F00E040E3 /* SLKTypingIndicatorView.m */; };
+		158D9D511C10422F00E040E3 /* UIResponder+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D441C10422F00E040E3 /* UIResponder+SLKAdditions.m */; };
+		158D9D521C10422F00E040E3 /* UIScrollView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D461C10422F00E040E3 /* UIScrollView+SLKAdditions.m */; };
+		158D9D531C10422F00E040E3 /* UIView+SLKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D481C10422F00E040E3 /* UIView+SLKAdditions.m */; };
+		158D9D611C104B5500E040E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158D9D561C104B5500E040E3 /* Images.xcassets */; };
+		158D9D621C104B5500E040E3 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D581C104B5500E040E3 /* Message.m */; };
+		158D9D631C104B5500E040E3 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D5A1C104B5500E040E3 /* MessageTableViewCell.m */; };
+		158D9D641C104B5500E040E3 /* MessageTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D5C1C104B5500E040E3 /* MessageTextView.m */; };
+		158D9D651C104B5500E040E3 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D5E1C104B5500E040E3 /* MessageViewController.m */; };
+		158D9D661C104B5500E040E3 /* TypingIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D601C104B5500E040E3 /* TypingIndicatorView.m */; };
+		158D9D681C10528C00E040E3 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158D9D671C10528C00E040E3 /* AnswerCell.swift */; };
+		15C8671A1BFB113F00B97523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C867191BFB113F00B97523 /* AppDelegate.swift */; };
+		15C8671C1BFB113F00B97523 /* SoloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C8671B1BFB113F00B97523 /* SoloViewController.swift */; };
+		15C8671F1BFB113F00B97523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C8671D1BFB113F00B97523 /* Main.storyboard */; };
+		15C867211BFB113F00B97523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C867201BFB113F00B97523 /* Assets.xcassets */; };
+		15C867241BFB113F00B97523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C867221BFB113F00B97523 /* LaunchScreen.storyboard */; };
+		15C8672F1BFB113F00B97523 /* DazzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C8672E1BFB113F00B97523 /* DazzleTests.swift */; };
+		15C8673A1BFB113F00B97523 /* DazzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C867391BFB113F00B97523 /* DazzleUITests.swift */; };
+		15C8674C1BFB182700B97523 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C8674B1BFB182700B97523 /* Configuration.swift */; };
+		F213D621BF6BCBCD5815898C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF646009414AC309D404423E /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15C8672B1BFB113F00B97523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15C8670E1BFB113F00B97523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15C867151BFB113F00B97523;
+			remoteInfo = Dazzle;
+		};
+		15C867361BFB113F00B97523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15C8670E1BFB113F00B97523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15C867151BFB113F00B97523;
+			remoteInfo = Dazzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		150C57521BFB1D5900BE4153 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		150C57531BFB1D5900BE4153 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		150C57541BFB1D5900BE4153 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
+		150C57581BFBBE0C00BE4153 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		15889F6C1BFE88F000F93647 /* TaskViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewCell.swift; sourceTree = "<group>"; };
+		158D9D0C1C1027AF00E040E3 /* StatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		158D9D101C10283600E040E3 /* Dazzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dazzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		158D9D141C1028EB00E040E3 /* ANDBackgroundChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDBackgroundChartView.h; sourceTree = "<group>"; };
+		158D9D151C1028EB00E040E3 /* ANDBackgroundChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDBackgroundChartView.m; sourceTree = "<group>"; };
+		158D9D161C1028EB00E040E3 /* ANDInternalLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDInternalLineChartView.h; sourceTree = "<group>"; };
+		158D9D171C1028EB00E040E3 /* ANDInternalLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDInternalLineChartView.m; sourceTree = "<group>"; };
+		158D9D181C1028EB00E040E3 /* ANDLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANDLineChartView.h; sourceTree = "<group>"; };
+		158D9D191C1028EB00E040E3 /* ANDLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANDLineChartView.m; sourceTree = "<group>"; };
+		158D9D1F1C10292200E040E3 /* ADVAnimatedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVAnimatedButton.swift; sourceTree = "<group>"; };
+		158D9D211C10292200E040E3 /* ADVGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVGradientButton.swift; sourceTree = "<group>"; };
+		158D9D231C10292200E040E3 /* ADVProgressControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVProgressControl.swift; sourceTree = "<group>"; };
+		158D9D241C10292200E040E3 /* ADVProgressLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVProgressLayer.swift; sourceTree = "<group>"; };
+		158D9D261C10292200E040E3 /* ADVSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVSegmentedControl.swift; sourceTree = "<group>"; };
+		158D9D281C10292200E040E3 /* ADVTabSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVTabSegmentControl.swift; sourceTree = "<group>"; };
+		158D9D2F1C103D5B00E040E3 /* TypeTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeTaskViewController.swift; sourceTree = "<group>"; };
+		158D9D321C10422F00E040E3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		158D9D331C10422F00E040E3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		158D9D351C10422F00E040E3 /* SLKInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKInputAccessoryView.h; sourceTree = "<group>"; };
+		158D9D361C10422F00E040E3 /* SLKInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKInputAccessoryView.m; sourceTree = "<group>"; };
+		158D9D371C10422F00E040E3 /* SLKTextInputbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextInputbar.h; sourceTree = "<group>"; };
+		158D9D381C10422F00E040E3 /* SLKTextInputbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextInputbar.m; sourceTree = "<group>"; };
+		158D9D391C10422F00E040E3 /* SLKTextView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLKTextView+SLKAdditions.h"; sourceTree = "<group>"; };
+		158D9D3A1C10422F00E040E3 /* SLKTextView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLKTextView+SLKAdditions.m"; sourceTree = "<group>"; };
+		158D9D3B1C10422F00E040E3 /* SLKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextView.h; sourceTree = "<group>"; };
+		158D9D3C1C10422F00E040E3 /* SLKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextView.m; sourceTree = "<group>"; };
+		158D9D3D1C10422F00E040E3 /* SLKTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTextViewController.h; sourceTree = "<group>"; };
+		158D9D3E1C10422F00E040E3 /* SLKTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTextViewController.m; sourceTree = "<group>"; };
+		158D9D3F1C10422F00E040E3 /* SLKTypingIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTypingIndicatorProtocol.h; sourceTree = "<group>"; };
+		158D9D401C10422F00E040E3 /* SLKTypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKTypingIndicatorView.h; sourceTree = "<group>"; };
+		158D9D411C10422F00E040E3 /* SLKTypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLKTypingIndicatorView.m; sourceTree = "<group>"; };
+		158D9D421C10422F00E040E3 /* SLKUIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLKUIConstants.h; sourceTree = "<group>"; };
+		158D9D431C10422F00E040E3 /* UIResponder+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+SLKAdditions.h"; sourceTree = "<group>"; };
+		158D9D441C10422F00E040E3 /* UIResponder+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+SLKAdditions.m"; sourceTree = "<group>"; };
+		158D9D451C10422F00E040E3 /* UIScrollView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SLKAdditions.h"; sourceTree = "<group>"; };
+		158D9D461C10422F00E040E3 /* UIScrollView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SLKAdditions.m"; sourceTree = "<group>"; };
+		158D9D471C10422F00E040E3 /* UIView+SLKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLKAdditions.h"; sourceTree = "<group>"; };
+		158D9D481C10422F00E040E3 /* UIView+SLKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLKAdditions.m"; sourceTree = "<group>"; };
+		158D9D551C104B5500E040E3 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		158D9D561C104B5500E040E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		158D9D571C104B5500E040E3 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		158D9D581C104B5500E040E3 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		158D9D591C104B5500E040E3 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		158D9D5A1C104B5500E040E3 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		158D9D5B1C104B5500E040E3 /* MessageTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTextView.h; sourceTree = "<group>"; };
+		158D9D5C1C104B5500E040E3 /* MessageTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTextView.m; sourceTree = "<group>"; };
+		158D9D5D1C104B5500E040E3 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		158D9D5E1C104B5500E040E3 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		158D9D5F1C104B5500E040E3 /* TypingIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypingIndicatorView.h; sourceTree = "<group>"; };
+		158D9D601C104B5500E040E3 /* TypingIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypingIndicatorView.m; sourceTree = "<group>"; };
+		158D9D671C10528C00E040E3 /* AnswerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		15C867161BFB113F00B97523 /* Dazzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dazzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C867191BFB113F00B97523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15C8671B1BFB113F00B97523 /* SoloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloViewController.swift; sourceTree = "<group>"; };
+		15C8671E1BFB113F00B97523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15C867201BFB113F00B97523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15C867231BFB113F00B97523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15C867251BFB113F00B97523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C8672A1BFB113F00B97523 /* DazzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DazzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C8672E1BFB113F00B97523 /* DazzleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazzleTests.swift; sourceTree = "<group>"; };
+		15C867301BFB113F00B97523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C867351BFB113F00B97523 /* DazzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DazzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15C867391BFB113F00B97523 /* DazzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DazzleUITests.swift; sourceTree = "<group>"; };
+		15C8673B1BFB113F00B97523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C8674B1BFB182700B97523 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		97F43EE0357ADF2D0098E95C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BF646009414AC309D404423E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDCCD279538327FA39681C3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15C867131BFB113F00B97523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F213D621BF6BCBCD5815898C /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867271BFB113F00B97523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867321BFB113F00B97523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10C0C646B21508281B689055 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF646009414AC309D404423E /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		150C57511BFB1D3100BE4153 /* Login / Registration */ = {
+			isa = PBXGroup;
+			children = (
+				150C57521BFB1D5900BE4153 /* LoginViewController.swift */,
+				150C57531BFB1D5900BE4153 /* SignupViewController.swift */,
+				150C57541BFB1D5900BE4153 /* IndexViewController.swift */,
+			);
+			name = "Login / Registration";
+			sourceTree = "<group>";
+		};
+		158D9D131C1028AE00E040E3 /* ANDLineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D141C1028EB00E040E3 /* ANDBackgroundChartView.h */,
+				158D9D151C1028EB00E040E3 /* ANDBackgroundChartView.m */,
+				158D9D161C1028EB00E040E3 /* ANDInternalLineChartView.h */,
+				158D9D171C1028EB00E040E3 /* ANDInternalLineChartView.m */,
+				158D9D181C1028EB00E040E3 /* ANDLineChartView.h */,
+				158D9D191C1028EB00E040E3 /* ANDLineChartView.m */,
+			);
+			name = ANDLineChartView;
+			sourceTree = "<group>";
+		};
+		158D9D1D1C10292200E040E3 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D1E1C10292200E040E3 /* ADVAnimatedButton */,
+				158D9D201C10292200E040E3 /* ADVGradientButton */,
+				158D9D221C10292200E040E3 /* ADVProgressControl */,
+				158D9D251C10292200E040E3 /* ADVSegmentControl */,
+				158D9D271C10292200E040E3 /* ADVTabSegmentControl */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		158D9D1E1C10292200E040E3 /* ADVAnimatedButton */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D1F1C10292200E040E3 /* ADVAnimatedButton.swift */,
+			);
+			path = ADVAnimatedButton;
+			sourceTree = "<group>";
+		};
+		158D9D201C10292200E040E3 /* ADVGradientButton */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D211C10292200E040E3 /* ADVGradientButton.swift */,
+			);
+			path = ADVGradientButton;
+			sourceTree = "<group>";
+		};
+		158D9D221C10292200E040E3 /* ADVProgressControl */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D231C10292200E040E3 /* ADVProgressControl.swift */,
+				158D9D241C10292200E040E3 /* ADVProgressLayer.swift */,
+			);
+			path = ADVProgressControl;
+			sourceTree = "<group>";
+		};
+		158D9D251C10292200E040E3 /* ADVSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D261C10292200E040E3 /* ADVSegmentedControl.swift */,
+			);
+			path = ADVSegmentControl;
+			sourceTree = "<group>";
+		};
+		158D9D271C10292200E040E3 /* ADVTabSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D281C10292200E040E3 /* ADVTabSegmentControl.swift */,
+			);
+			path = ADVTabSegmentControl;
+			sourceTree = "<group>";
+		};
+		158D9D311C10422F00E040E3 /* SlackTextViewController */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D321C10422F00E040E3 /* LICENSE */,
+				158D9D331C10422F00E040E3 /* README.md */,
+				158D9D341C10422F00E040E3 /* Source */,
+			);
+			path = SlackTextViewController;
+			sourceTree = "<group>";
+		};
+		158D9D341C10422F00E040E3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D351C10422F00E040E3 /* SLKInputAccessoryView.h */,
+				158D9D361C10422F00E040E3 /* SLKInputAccessoryView.m */,
+				158D9D371C10422F00E040E3 /* SLKTextInputbar.h */,
+				158D9D381C10422F00E040E3 /* SLKTextInputbar.m */,
+				158D9D391C10422F00E040E3 /* SLKTextView+SLKAdditions.h */,
+				158D9D3A1C10422F00E040E3 /* SLKTextView+SLKAdditions.m */,
+				158D9D3B1C10422F00E040E3 /* SLKTextView.h */,
+				158D9D3C1C10422F00E040E3 /* SLKTextView.m */,
+				158D9D3D1C10422F00E040E3 /* SLKTextViewController.h */,
+				158D9D3E1C10422F00E040E3 /* SLKTextViewController.m */,
+				158D9D3F1C10422F00E040E3 /* SLKTypingIndicatorProtocol.h */,
+				158D9D401C10422F00E040E3 /* SLKTypingIndicatorView.h */,
+				158D9D411C10422F00E040E3 /* SLKTypingIndicatorView.m */,
+				158D9D421C10422F00E040E3 /* SLKUIConstants.h */,
+				158D9D431C10422F00E040E3 /* UIResponder+SLKAdditions.h */,
+				158D9D441C10422F00E040E3 /* UIResponder+SLKAdditions.m */,
+				158D9D451C10422F00E040E3 /* UIScrollView+SLKAdditions.h */,
+				158D9D461C10422F00E040E3 /* UIScrollView+SLKAdditions.m */,
+				158D9D471C10422F00E040E3 /* UIView+SLKAdditions.h */,
+				158D9D481C10422F00E040E3 /* UIView+SLKAdditions.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		158D9D541C104B5500E040E3 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D551C104B5500E040E3 /* Bridge-Header.h */,
+				158D9D561C104B5500E040E3 /* Images.xcassets */,
+				158D9D571C104B5500E040E3 /* Message.h */,
+				158D9D581C104B5500E040E3 /* Message.m */,
+				158D9D591C104B5500E040E3 /* MessageTableViewCell.h */,
+				158D9D5A1C104B5500E040E3 /* MessageTableViewCell.m */,
+				158D9D5B1C104B5500E040E3 /* MessageTextView.h */,
+				158D9D5C1C104B5500E040E3 /* MessageTextView.m */,
+				158D9D5D1C104B5500E040E3 /* MessageViewController.h */,
+				158D9D5E1C104B5500E040E3 /* MessageViewController.m */,
+				158D9D5F1C104B5500E040E3 /* TypingIndicatorView.h */,
+				158D9D601C104B5500E040E3 /* TypingIndicatorView.m */,
+			);
+			name = Messenger;
+			path = "Messenger-Shared";
+			sourceTree = "<group>";
+		};
+		15C8670D1BFB113F00B97523 = {
+			isa = PBXGroup;
+			children = (
+				15C867181BFB113F00B97523 /* Dazzle */,
+				15C8672D1BFB113F00B97523 /* DazzleTests */,
+				15C867381BFB113F00B97523 /* DazzleUITests */,
+				15C867171BFB113F00B97523 /* Products */,
+				A2D050E40156491F8B75345F /* Pods */,
+				10C0C646B21508281B689055 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15C867171BFB113F00B97523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15C867161BFB113F00B97523 /* Dazzle.app */,
+				15C8672A1BFB113F00B97523 /* DazzleTests.xctest */,
+				15C867351BFB113F00B97523 /* DazzleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15C867181BFB113F00B97523 /* Dazzle */ = {
+			isa = PBXGroup;
+			children = (
+				15C8674A1BFB176100B97523 /* Main Menu */,
+				150C57511BFB1D3100BE4153 /* Login / Registration */,
+				15C867491BFB175A00B97523 /* Storyboards */,
+				15C8674D1BFB182E00B97523 /* Configuration */,
+				15C867471BFB173B00B97523 /* App Delegate */,
+				15C867481BFB174D00B97523 /* Supporting Files */,
+			);
+			path = Dazzle;
+			sourceTree = "<group>";
+		};
+		15C8672D1BFB113F00B97523 /* DazzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				15C8672E1BFB113F00B97523 /* DazzleTests.swift */,
+				15C867301BFB113F00B97523 /* Info.plist */,
+			);
+			path = DazzleTests;
+			sourceTree = "<group>";
+		};
+		15C867381BFB113F00B97523 /* DazzleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15C867391BFB113F00B97523 /* DazzleUITests.swift */,
+				15C8673B1BFB113F00B97523 /* Info.plist */,
+			);
+			path = DazzleUITests;
+			sourceTree = "<group>";
+		};
+		15C867471BFB173B00B97523 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				15C867191BFB113F00B97523 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		15C867481BFB174D00B97523 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				158D9D541C104B5500E040E3 /* Messenger */,
+				158D9D311C10422F00E040E3 /* SlackTextViewController */,
+				158D9D1D1C10292200E040E3 /* Controls */,
+				158D9D131C1028AE00E040E3 /* ANDLineChartView */,
+				158D9D101C10283600E040E3 /* Dazzle-Bridging-Header.h */,
+				15C867201BFB113F00B97523 /* Assets.xcassets */,
+				15C867221BFB113F00B97523 /* LaunchScreen.storyboard */,
+				15C867251BFB113F00B97523 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15C867491BFB175A00B97523 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				15C8671D1BFB113F00B97523 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		15C8674A1BFB176100B97523 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				15C8671B1BFB113F00B97523 /* SoloViewController.swift */,
+				150C57581BFBBE0C00BE4153 /* GroupViewController.swift */,
+				15889F6A1BFE754B00F93647 /* NewTaskViewController.swift */,
+				15889F6C1BFE88F000F93647 /* TaskViewCell.swift */,
+				158D9D0C1C1027AF00E040E3 /* StatsViewController.swift */,
+				158D9D2F1C103D5B00E040E3 /* TypeTaskViewController.swift */,
+				158D9D671C10528C00E040E3 /* AnswerCell.swift */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		15C8674D1BFB182E00B97523 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				15C8674B1BFB182700B97523 /* Configuration.swift */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		A2D050E40156491F8B75345F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDDCCD279538327FA39681C3 /* Pods.debug.xcconfig */,
+				97F43EE0357ADF2D0098E95C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15C867151BFB113F00B97523 /* Dazzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C8673E1BFB113F00B97523 /* Build configuration list for PBXNativeTarget "Dazzle" */;
+			buildPhases = (
+				A27A27923FC31A491C763763 /* Check Pods Manifest.lock */,
+				15C867121BFB113F00B97523 /* Sources */,
+				15C867131BFB113F00B97523 /* Frameworks */,
+				15C867141BFB113F00B97523 /* Resources */,
+				583BD00D4E18AF3976B93923 /* Embed Pods Frameworks */,
+				1AFFEE7632C936673B5F904C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dazzle;
+			productName = Dazzle;
+			productReference = 15C867161BFB113F00B97523 /* Dazzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15C867291BFB113F00B97523 /* DazzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C867411BFB113F00B97523 /* Build configuration list for PBXNativeTarget "DazzleTests" */;
+			buildPhases = (
+				15C867261BFB113F00B97523 /* Sources */,
+				15C867271BFB113F00B97523 /* Frameworks */,
+				15C867281BFB113F00B97523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15C8672C1BFB113F00B97523 /* PBXTargetDependency */,
+			);
+			name = DazzleTests;
+			productName = DazzleTests;
+			productReference = 15C8672A1BFB113F00B97523 /* DazzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15C867341BFB113F00B97523 /* DazzleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C867441BFB113F00B97523 /* Build configuration list for PBXNativeTarget "DazzleUITests" */;
+			buildPhases = (
+				15C867311BFB113F00B97523 /* Sources */,
+				15C867321BFB113F00B97523 /* Frameworks */,
+				15C867331BFB113F00B97523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15C867371BFB113F00B97523 /* PBXTargetDependency */,
+			);
+			name = DazzleUITests;
+			productName = DazzleUITests;
+			productReference = 15C867351BFB113F00B97523 /* DazzleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15C8670E1BFB113F00B97523 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Corner Innovations LLC";
+				TargetAttributes = {
+					15C867151BFB113F00B97523 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R3EMXUXEK2;
+					};
+					15C867291BFB113F00B97523 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R3EMXUXEK2;
+						TestTargetID = 15C867151BFB113F00B97523;
+					};
+					15C867341BFB113F00B97523 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = R3EMXUXEK2;
+						TestTargetID = 15C867151BFB113F00B97523;
+					};
+				};
+			};
+			buildConfigurationList = 15C867111BFB113F00B97523 /* Build configuration list for PBXProject "Dazzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15C8670D1BFB113F00B97523;
+			productRefGroup = 15C867171BFB113F00B97523 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C867151BFB113F00B97523 /* Dazzle */,
+				15C867291BFB113F00B97523 /* DazzleTests */,
+				15C867341BFB113F00B97523 /* DazzleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15C867141BFB113F00B97523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C867241BFB113F00B97523 /* LaunchScreen.storyboard in Resources */,
+				158D9D611C104B5500E040E3 /* Images.xcassets in Resources */,
+				15C867211BFB113F00B97523 /* Assets.xcassets in Resources */,
+				158D9D491C10422F00E040E3 /* LICENSE in Resources */,
+				15C8671F1BFB113F00B97523 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867281BFB113F00B97523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867331BFB113F00B97523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AFFEE7632C936673B5F904C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583BD00D4E18AF3976B93923 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A27A27923FC31A491C763763 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15C867121BFB113F00B97523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				150C57551BFB1D5900BE4153 /* LoginViewController.swift in Sources */,
+				158D9D511C10422F00E040E3 /* UIResponder+SLKAdditions.m in Sources */,
+				158D9D4C1C10422F00E040E3 /* SLKTextInputbar.m in Sources */,
+				158D9D2A1C10292200E040E3 /* ADVGradientButton.swift in Sources */,
+				158D9D4E1C10422F00E040E3 /* SLKTextView.m in Sources */,
+				15C8674C1BFB182700B97523 /* Configuration.swift in Sources */,
+				158D9D521C10422F00E040E3 /* UIScrollView+SLKAdditions.m in Sources */,
+				158D9D531C10422F00E040E3 /* UIView+SLKAdditions.m in Sources */,
+				158D9D4A1C10422F00E040E3 /* README.md in Sources */,
+				158D9D301C103D5B00E040E3 /* TypeTaskViewController.swift in Sources */,
+				158D9D291C10292200E040E3 /* ADVAnimatedButton.swift in Sources */,
+				158D9D2B1C10292200E040E3 /* ADVProgressControl.swift in Sources */,
+				150C57561BFB1D5900BE4153 /* SignupViewController.swift in Sources */,
+				15C8671C1BFB113F00B97523 /* SoloViewController.swift in Sources */,
+				158D9D651C104B5500E040E3 /* MessageViewController.m in Sources */,
+				158D9D681C10528C00E040E3 /* AnswerCell.swift in Sources */,
+				158D9D621C104B5500E040E3 /* Message.m in Sources */,
+				158D9D2C1C10292200E040E3 /* ADVProgressLayer.swift in Sources */,
+				158D9D4D1C10422F00E040E3 /* SLKTextView+SLKAdditions.m in Sources */,
+				158D9D641C104B5500E040E3 /* MessageTextView.m in Sources */,
+				15C8671A1BFB113F00B97523 /* AppDelegate.swift in Sources */,
+				158D9D4B1C10422F00E040E3 /* SLKInputAccessoryView.m in Sources */,
+				15889F6B1BFE754B00F93647 /* NewTaskViewController.swift in Sources */,
+				158D9D4F1C10422F00E040E3 /* SLKTextViewController.m in Sources */,
+				158D9D1B1C1028EB00E040E3 /* ANDInternalLineChartView.m in Sources */,
+				150C57571BFB1D5900BE4153 /* IndexViewController.swift in Sources */,
+				158D9D661C104B5500E040E3 /* TypingIndicatorView.m in Sources */,
+				15889F6D1BFE88F000F93647 /* TaskViewCell.swift in Sources */,
+				158D9D1A1C1028EB00E040E3 /* ANDBackgroundChartView.m in Sources */,
+				158D9D631C104B5500E040E3 /* MessageTableViewCell.m in Sources */,
+				158D9D2E1C10292200E040E3 /* ADVTabSegmentControl.swift in Sources */,
+				158D9D0D1C1027AF00E040E3 /* StatsViewController.swift in Sources */,
+				158D9D501C10422F00E040E3 /* SLKTypingIndicatorView.m in Sources */,
+				158D9D1C1C1028EB00E040E3 /* ANDLineChartView.m in Sources */,
+				158D9D2D1C10292200E040E3 /* ADVSegmentedControl.swift in Sources */,
+				150C57591BFBBE0C00BE4153 /* GroupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867261BFB113F00B97523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C8672F1BFB113F00B97523 /* DazzleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15C867311BFB113F00B97523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15C8673A1BFB113F00B97523 /* DazzleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C8672C1BFB113F00B97523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15C867151BFB113F00B97523 /* Dazzle */;
+			targetProxy = 15C8672B1BFB113F00B97523 /* PBXContainerItemProxy */;
+		};
+		15C867371BFB113F00B97523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15C867151BFB113F00B97523 /* Dazzle */;
+			targetProxy = 15C867361BFB113F00B97523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15C8671D1BFB113F00B97523 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15C8671E1BFB113F00B97523 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15C867221BFB113F00B97523 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15C867231BFB113F00B97523 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15C8673C1BFB113F00B97523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15C8673D1BFB113F00B97523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15C8673F1BFB113F00B97523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDCCD279538327FA39681C3 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = Dazzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.Dazzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dazzle/Dazzle-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15C867401BFB113F00B97523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97F43EE0357ADF2D0098E95C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = Dazzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.Dazzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dazzle/Dazzle-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		15C867421BFB113F00B97523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DazzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.DazzleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazzle.app/Dazzle";
+			};
+			name = Debug;
+		};
+		15C867431BFB113F00B97523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DazzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.DazzleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dazzle.app/Dazzle";
+			};
+			name = Release;
+		};
+		15C867451BFB113F00B97523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DazzleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.DazzleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dazzle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		15C867461BFB113F00B97523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DazzleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cornerinnovations.DazzleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dazzle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15C867111BFB113F00B97523 /* Build configuration list for PBXProject "Dazzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C8673C1BFB113F00B97523 /* Debug */,
+				15C8673D1BFB113F00B97523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C8673E1BFB113F00B97523 /* Build configuration list for PBXNativeTarget "Dazzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C8673F1BFB113F00B97523 /* Debug */,
+				15C867401BFB113F00B97523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C867411BFB113F00B97523 /* Build configuration list for PBXNativeTarget "DazzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C867421BFB113F00B97523 /* Debug */,
+				15C867431BFB113F00B97523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C867441BFB113F00B97523 /* Build configuration list for PBXNativeTarget "DazzleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C867451BFB113F00B97523 /* Debug */,
+				15C867461BFB113F00B97523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15C8670E1BFB113F00B97523 /* Project object */;
+}
