@@ -49,6 +49,10 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    keywordsTextField.delegate = self
+    keywordsTextField.text = "Enter your question/task here."
+    keywordsTextField.textColor = UIColor.lightGrayColor()
+    
     tableView.separatorColor = UIColor(white: 0.75, alpha: 1.0)
     activityPickerData = ["Draw", "Speak", "Type"]
     sessionPickerData = ["5min", "10min", "15min"]
@@ -224,4 +228,20 @@ class NewTaskViewController: UITableViewController, UITextFieldDelegate, UINavig
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
     return .LightContent
   }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if textField.text! == "Enter your question/task here." {
+            textField.text! = ""
+            textField.textColor = UIColor.blackColor()
+        }
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if textField.text! == "" {
+            textField.text! = "Enter your question/task here."
+            textField.textColor = UIColor.lightGrayColor()
+        }
+        textField.resignFirstResponder()
+    }
 }
