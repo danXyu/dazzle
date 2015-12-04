@@ -113,6 +113,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -970,6 +971,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -1351,9 +1353,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOB-44-vzt">
-                                <rect key="frame" x="235" y="555" width="130" height="30"/>
+                                <rect key="frame" x="260" y="555" width="80" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Get Started Button"/>
+                                <state key="normal" title="Get Started"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="SpeakInstructions" translatesAutoresizingMaskIntoConstraints="NO" id="SPz-AP-8Yq">
                                 <rect key="frame" x="20" y="91" width="560" height="448"/>
@@ -1581,9 +1583,9 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEG-VK-m5p">
-                                <rect key="frame" x="235" y="555" width="130" height="30"/>
+                                <rect key="frame" x="260" y="555" width="80" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Get Started Button"/>
+                                <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="pCx-Rz-T7h" kind="show" id="gaz-AL-fRQ"/>
                                 </connections>
@@ -1747,9 +1749,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOy-Uu-hjn">
-                                <rect key="frame" x="235" y="555" width="130" height="30"/>
+                                <rect key="frame" x="260" y="555" width="80" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Get Started Button"/>
+                                <state key="normal" title="Get Started"/>
                                 <connections>
                                     <segue destination="egK-os-Rcy" kind="show" id="han-qQ-hVm"/>
                                 </connections>
@@ -1838,17 +1840,17 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="answerCell" id="tTn-5V-IjE" customClass="AnswerCell" customModule="Dazzle" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tTn-5V-IjE" id="U80-DY-oo6">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydE-Ln-cQk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydE-Ln-cQk">
                                                     <rect key="frame" x="279" y="11" width="42" height="20.5"/>
                                                     <animations/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.27058823529999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1925,11 +1927,11 @@
         <image name="TypeInstructions" width="670" height="1047"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sOw-vv-boq"/>
+        <segue reference="dCA-z7-or7"/>
+        <segue reference="Gf3-UY-Ky1"/>
         <segue reference="53x-Xh-5QA"/>
+        <segue reference="y8i-rT-raT"/>
         <segue reference="Zec-Gs-Ogh"/>
         <segue reference="3eF-hw-cdF"/>
-        <segue reference="y8i-rT-raT"/>
-        <segue reference="vJ4-0z-0gS"/>
     </inferredMetricsTieBreakers>
 </document>
