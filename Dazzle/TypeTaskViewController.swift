@@ -50,6 +50,7 @@ class TypeTaskViewController: UIViewController, UITableViewDataSource, UITableVi
   
   @IBAction func addNewAnswer(sender: UIButton) {
     answers?.append(answerTextField.text!)
+    answerTextField.text = nil
     self.tableView.reloadData()
   }
 }

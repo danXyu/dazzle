@@ -52,7 +52,10 @@ let userPF = PFUser()
 var currentUser = PFUser.currentUser()!
 var hasSignedUp = false
 var selectedTask: PFObject? = nil
-var answers: [String]? = nil
+
+// simon - changed this
+var answers: [String]? = []
+
 var savedImage: UIImage? = nil
 
 
